@@ -68,7 +68,17 @@ header #avatar
 header #avatar img
 {
 	border-radius: 50%;
+	float: left;
 	width: 55px;
+}
+header #avatar figcaption
+{
+	background: #22BCE0;
+	border-radius: 0% 30% 30% 0%;
+	color: white;
+	margin-top: 23%;
+	float: right;
+	padding: 0em 0.3em;
 }
 header #logo img
 {
@@ -80,6 +90,7 @@ header #logo img
 nav
 {
 	background: #80BCA3;
+	box-shadow: rgba(0,0,0,0.5) 0px 0px 10px;
 	position: relative;
 }
 nav ul
@@ -105,6 +116,7 @@ nav ul #publicar_nav
 	position: absolute;
 	top: -0.1em;
 	right: 0;
+	width: 83px;
 }
 
 nav ul #publicar_nav a
