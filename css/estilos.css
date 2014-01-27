@@ -54,6 +54,10 @@ a
 {
 	color:#22BCE0;
 }
+aside
+{
+	display: none;
+}
 body
 {
 	background: #EEEEEE;
@@ -133,12 +137,22 @@ header #avatar figcaption
 	margin-top: 27%;
 	float: right;
 }
-header #logo img
+header #logo
 {
 	border-right: 1px solid white;
 	margin-right: 0.5em;
 	padding-right: 0.5em;
+}
+header #logo img
+{
+	transition:0.5s;
+	/*-webkit-transition:0.5s;*/
 	width: 52px;
+}
+header #logo img:hover
+{
+	/*-webkit-transform:rotate(360deg);*/
+	transform:rotate(360deg);
 }
 nav
 {
@@ -164,6 +178,11 @@ nav ul li a
 	display: block;
 	padding: 0.5em;
 	text-decoration: none;
+	-webkit-transition:0.3s;
+}
+nav ul li a:hover
+{
+	background: #344B54;
 }
 nav ul #publicar_nav
 {
@@ -179,6 +198,10 @@ nav ul #publicar_nav a
 	box-shadow: rgba(0,0,0,0.5) 5px 5px 20px;
 	padding: 0.6em 0.8em;
 	text-shadow:rgba(0,0,0,0.5) 2px 2px 5px;
+}
+nav ul #publicar_nav a:hover
+{
+	box-shadow: 0 0 30px yellow;
 }
 #contenido
 {
@@ -271,12 +294,35 @@ nav ul #publicar_nav a
 	float: right;
 }
 
+@media screen and (min-width: 800px){
+	
+	#contenido
+	{
+		overflow: hidden;
+	}
 
-
-
-
-
-
+	#contenido .item
+	{
+		float: left;
+		width: 49%;
+	}
+	#contenido .item:nth-child(odd){
+		margin-right: 2%;
+	}
+}
+@media screen and (min-width: 1000px){
+	aside
+	{
+		display: block;
+		float: right;
+		margin: 1em;
+		width: 25%;
+	}
+	aside video
+	{
+		width: 100%;
+	}
+}
 
 
 
